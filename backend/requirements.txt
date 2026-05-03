@@ -1,0 +1,18 @@
+# --- Framework e Servidor ---
+fastapi
+uvicorn
+pydantic
+
+# --- Integração de Mercado (MT5) ---
+MetaTrader5
+
+# --- Manipulação de Dados e Gráficos ---
+pandas
+matplotlib
+mplfinance
+
+# --- Inteligência Artificial ---
+google-genai
+
+# --- Utilitários ---
+feedparser

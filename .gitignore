@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+env/
+
+# Node / React
+node_modules/
+build/
+dist/
+.env.local
+
+# MT5 & Local Data
+fibo_data.json
+elliott_memory.json
+news_calendar.json
