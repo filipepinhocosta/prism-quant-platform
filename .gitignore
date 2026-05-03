@@ -1,17 +1,18 @@
 # Python
 __pycache__/
 *.py[cod]
-.env
+*$py.class
 venv/
-env/
+.env
 
-# Node / React
-node_modules/
-build/
-dist/
-.env.local
-
-# MT5 & Local Data
+# Trading Data (Evita carregar o teu histórico de tokens e logs)
+billing_metrics.json
 fibo_data.json
-elliott_memory.json
 news_calendar.json
+dom_data.json
+elliott_memory.json
+soft_sl.json
+
+# IDEs
+.vscode/
+.idea/

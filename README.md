@@ -32,6 +32,40 @@ The backend securely extracts live MT5 candlesticks, packages them with institut
 ### Dynamic Risk & Elliott Math (React)
 Calculates margin requirements and generates proportional lot sizes automatically based on the dynamically plotted Elliott Wave extremities, factoring in account equity in real-time.
 
+### 🏗️ Prism Quant: System Architecture Diagram
+graph TD
+    subgraph "DATA SOURCE LAYER"
+        MT5[MetaTrader 5 Terminal]
+        FP[FPMarkets Liquidity Pool]
+    end
+
+    subgraph "INTELLIGENCE ENGINE (Matrix SMC)"
+        A[MT5 Raw Data Pull] --> B{SMC & Macro Analytics}
+        B -->|Lucas Sequence| C[Time Projections]
+        B -->|Correlation 8Y| D[Market Matrix]
+        B -->|mplfinance| E[Apex Vision Generation]
+        E -->|Base64| G[Google Gemini 3.1 Pro]
+        G -->|Visual Analysis| H[Institutional Bias]
+    end
+
+    subgraph "ATOMIC DATA BRIDGE"
+        H --> JSON[(fibo_data.json)]
+        D --> JSON
+        C --> JSON
+    end
+
+    subgraph "EXECUTION ENGINE (Apex Berserker)"
+        JSON --> I[Context Loading]
+        I --> J{Multi-Strategy Logic}
+        J -->|Signal Confirmation| K[Berserker Oracle LLM]
+        J -->|M1 HFT Mode| L[Turtle Soup / Sweep Detection]
+        K --> M[Risk & Money Management]
+        L --> M
+        M -->|TRADE_ACTION_DEAL| MT5
+    end
+
+    MT5 <--> FP
+
 ## 🔒 Setup & Installation
 
 *Note: This repository contains the core logic and interface. Proprietary JSON data feeds (`fibo_data.json`, `elliott_memory.json`) and API keys are not included for security reasons.*
