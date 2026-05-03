@@ -1,7 +1,7 @@
 # Prism Quant: AI-Driven Algorithmic Trading & Analytics Platform
 ![Prism Quant Main Dashboard](dashboard-main.png)
 Prism Quant is a full-stack, institutional-grade quantitative trading platform. It bridges high-frequency MetaTrader 5 (MT5) execution with advanced LLM reasoning (Google Gemini 2.0 Flash) and Smart Money Concepts (SMC).
-
+![Berserker AI Oracle & Multi-Timeframe Analysis](dashboard-ai.png)
 Designed for absolute autonomy, it features real-time Order Flow (DOM) heatmaps, Elliott Wave fractal analysis mapped with the Lucas Sequence, and direct low-latency order execution via a React-based remote dashboard.
 
 ## 🚀 Key Features
