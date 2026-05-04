@@ -55,19 +55,29 @@ graph TD
 
     MT5 <--> FP
 ```	
-🛠️ System Architecture
+## 🛠️ System Architecture
 Frontend (React / TypeScript): A sleek, dark-mode-ready dashboard providing real-time ticker data, advanced SVG charting, order management, and a dedicated UI for the Gemini-powered Financial Assistant.
 
 Backend (FastAPI / Python): The high-performance core handling MT5 initialization, live chart rendering (mplfinance), algorithmic signal processing, and asynchronous API calls to Finnhub for macroeconomic events.
 
 Execution Layer (MT5 C++ API): Python MT5 integration executing secure, deviation-controlled TRADE_ACTION_DEAL requests directly into the broker's liquidity pool.
 
-💻 Tech Stack
+## 💻 Tech Stack
 Backend: Python 3.9+, FastAPI, Pandas, MPLFinance, MetaTrader5 API, Google GenAI.
 
 Frontend: React, TypeScript, TailwindCSS/Bootstrap, Lucide-React, React-Markdown.
 
 Infrastructure: Designed for Windows Server / VPS deployment (requires local MT5 terminal instance).
+
+## 🖥️ Infrastructure & Deployment
+Windows VPS/Server: Due to MetaTrader 5 requirements, the backend must be hosted on a Windows-based environment.
+
+Execution Order: The platform follows a strict dependency hierarchy to ensure data integrity.
+
+Atomic Data Bridge: The matrix_smc.py engine acts as the primary data provider for the entire ecosystem.
+
+## 🔒 Setup & Installation
+CRITICAL: Always start the matrix_smc.py engine BEFORE launching the Berserker execution module.
 
 ## 🔒 Setup & Installation
 
