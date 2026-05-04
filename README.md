@@ -54,7 +54,7 @@ graph TD
     end
 
     MT5 <--> FP
-	
+```	
 🛠️ System Architecture
 Frontend (React / TypeScript): A sleek, dark-mode-ready dashboard providing real-time ticker data, advanced SVG charting, order management, and a dedicated UI for the Gemini-powered Financial Assistant.
 
@@ -69,23 +69,27 @@ Frontend: React, TypeScript, TailwindCSS/Bootstrap, Lucide-React, React-Markdown
 
 Infrastructure: Designed for Windows Server / VPS deployment (requires local MT5 terminal instance).
 
-🔒 Setup & Installation
-Note: This repository contains the core logic and interface. Proprietary JSON data feeds (fibo_data.json, elliott_memory.json) and API keys are not included for security reasons.
+## 🔒 Setup & Installation
 
-1. Clone the repository:
-git clone [https://github.com/filipepinhocosta/prism-quant-platform.git](https://github.com/filipepinhocosta/prism-quant-platform.git)
+> **Note:** This repository contains the core logic and interface. Proprietary JSON data feeds (`fibo_data.json`, `elliott_memory.json`) and API keys are not included for security reasons.
 
+1. **Clone the repository:**
+   git clone https://github.com/filipepinhocosta/prism-quant-platform.git
+   
 2. Backend Setup:
+ ```bash
 cd backend
 pip install -r requirements.txt
 # Ensure MT5 is installed. The platform is configured to connect to:
 # C:\Program Files\FPMarkets MT5 Terminal
 uvicorn main:app --reload
-
+  ```
+  
+   ```bash
 3. Frontend Setup:
 cd frontend
 npm install
 npm start
-
-📝 License
+   ```
+## 📝 License
 This project is for educational and portfolio demonstration purposes. Trading in financial markets carries a high level of risk.
