@@ -85,11 +85,12 @@ pip install -r requirements.txt
 uvicorn main:app --reload
   ```
   
+ 3. Frontend Setup:
    ```bash
-3. Frontend Setup:
 cd frontend
 npm install
 npm start
    ```
+   
 ## 📝 License
 This project is for educational and portfolio demonstration purposes. Trading in financial markets carries a high level of risk.
