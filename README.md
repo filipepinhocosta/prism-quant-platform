@@ -33,6 +33,7 @@ The backend securely extracts live MT5 candlesticks, packages them with institut
 Calculates margin requirements and generates proportional lot sizes automatically based on the dynamically plotted Elliott Wave extremities, factoring in account equity in real-time.
 
 ### 🏗️ Prism Quant: System Architecture Diagram
+```mermaid
 graph TD
     subgraph "DATA SOURCE LAYER"
         MT5[MetaTrader 5 Terminal]
@@ -65,7 +66,7 @@ graph TD
     end
 
     MT5 <--> FP
-
+```
 ## 🔒 Setup & Installation
 
 *Note: This repository contains the core logic and interface. Proprietary JSON data feeds (`fibo_data.json`, `elliott_memory.json`) and API keys are not included for security reasons.*
