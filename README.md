@@ -77,11 +77,10 @@ Execution Order: The platform follows a strict dependency hierarchy to ensure da
 Atomic Data Bridge: The matrix_smc.py engine acts as the primary data provider for the entire ecosystem.
 
 ## 🔒 Setup & Installation
-CRITICAL: Always start the matrix_smc.py engine BEFORE launching the Berserker execution module.
-
-## 🔒 Setup & Installation
 
 > **Note:** This repository contains the core logic and interface. Proprietary JSON data feeds (`fibo_data.json`, `elliott_memory.json`) and API keys are not included for security reasons.
+
+CRITICAL: Always start the matrix_smc.py engine BEFORE launching the Berserker execution module.
 
 1. **Clone the repository:**
    git clone https://github.com/filipepinhocosta/prism-quant-platform.git
